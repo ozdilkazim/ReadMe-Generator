@@ -1,12 +1,11 @@
 const fs = require("fs");
-const path = require('path'); // Optional
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 const questions = require("./utils/questions");
 
 // function to write README file
-function writeToFile(fileName, info) { 
-    fs.writeFile(fileName, info, (err)=> {
+function writeToFile(fileName, readmeGEN) { 
+    fs.writeFile(fileName, readmeGEN, (err)=> {
     console.log(err);
     })
 }

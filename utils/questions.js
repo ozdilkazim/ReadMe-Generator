@@ -3,12 +3,31 @@ const questions = [
     {
         type: 'input',
         name : 'gitHubName',
-        message : 'What is your Github username?'
+        message : 'What is your Github username?',
+        // Username Validation
+        validate: async (gitHubName) => {
+            if (gitHubName) {
+                return true;
+            } else {
+                return 'Please enter a valid username';
+            }
+        },
     },
     {
         type: 'input',
         name : 'email',
-        message : 'What is your e-mail address?'
+        message : 'What is your e-mail address?',
+        // Email validation 
+        validate: async (email) => {
+            valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+            if (valid) {
+                return true;
+            } else {
+                console.log(".  Please enter a valid email")
+                return false;
+            }
+        },
+
     },
     {
         type: 'input',
