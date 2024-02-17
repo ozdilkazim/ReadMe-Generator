@@ -19,6 +19,6 @@ MIT License
 ## Contributing
 Many thanks to Jung for incredible efford and kindness.
 ## Tests
-inquirer and node are required to run the application. Please follow installation and usage progress.
+Inquirer and node are required to run the application. Please follow installation and usage progress.
 ## Questions
 If you have further questions, please click on my [Github Profile](https://www.github.com/ozdilkazim) or contact me at [skozdil@gmail.com](skozdil@gmail.com)
