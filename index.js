@@ -53,18 +53,20 @@ const questions = [
     },
 ];
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(fileName, data) { 
+    fs.writeFile(fileName, generateMarkdown(data), (err)=> {
+     //   console.log(err);
+    })
 }
 
 // function to initialize program
 function init() {
     inquirer
     .prompt(questions)
-    .then((answers) => {
-        console.log(answers);
-        // fs.writeFile('log.txt', JSON.stringify(answers), (err)=> {
-        //     console.log(err);
-        // })
+    .then((data) => {
+        let filename = `README.md`
+        console.log(data);
+        writeToFile(filename,data);
     });
 }
 
