@@ -16,7 +16,7 @@ async function init() {
     try {
       const answers = await inquirer.prompt(questions);
       const readmeGEN = generateMarkdown(answers);
-      let filename = `README.md`
+      let filename = 'README.md'
       await writeToFile(filename, readmeGEN);
     }
     catch (error) {
