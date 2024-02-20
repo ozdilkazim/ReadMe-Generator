@@ -5,7 +5,7 @@ const questions = require("./utils/questions");
 
 // function to write README file
 function writeToFile(fileName, readmeGEN) { 
-    fs.writeFile(fileName, readmeGEN, (err)=> {
+    fs.writeFile('./output/' + fileName, readmeGEN, (err)=> {
     console.log(err);
     })
 }
