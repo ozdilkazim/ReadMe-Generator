@@ -36,7 +36,7 @@ function generateBadge(license) {
             badge = { name : 'Open+Software+License+3.0', color : `red`};
             break;
         case 'MIT License':
-            badge = { name : 'MIT+License', color : `gray`};
+            badge = { name : 'MIT+License', color : `purple`};
             break;
         case 'GNU General Public License v3.0 or later':
             badge = { name : 'GNU+General+Public+License+v3.0+or+later', color : `blue`};

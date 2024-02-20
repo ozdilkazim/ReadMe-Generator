@@ -13,7 +13,8 @@ function writeToFile(fileName, readmeGEN) {
 // function to initialize program
 async function init() {
     try {
-      const answers = await inquirer.prompt(questions);
+     
+        const answers = await inquirer.prompt(questions);
       const readmeGEN = generateMarkdown(answers);
       let filename = 'README.md'
       await writeToFile(filename, readmeGEN);
