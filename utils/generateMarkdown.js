@@ -1,7 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(answers) {
     let licenseBadge = generateBadge(answers.license);
-    console.log(licenseBadge)
     return `![License](${licenseBadge})
 # ${answers.title}
 ${answers.description}
