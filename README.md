@@ -14,6 +14,8 @@ This is a README generator for making professional README files for your project
 Clone the file from repository to your local folder. Then run `npm install` for required package. 
 ## Usage
 Use `node index.js` prompt to run the application and answer the questions. The application will generate a README file regarding your answers with a markdown.
+
+Please find the usage video at [Google Drive](https://drive.google.com/file/d/1sH5r6PZngd-051MNEAyCw10T4Qv1IsWC/view)
 ## License
 MIT License
 ## Contributing
